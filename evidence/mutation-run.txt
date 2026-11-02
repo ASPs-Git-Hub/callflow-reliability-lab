@@ -1,0 +1,79 @@
+M01 KILLED   orchestrator.py: do-not-call check removed at dispatch
+M02 KILLED   orchestrator.py: appointment cutoff removed at dispatch
+M03 KILLED   orchestrator.py: attempt limit removed at BOTH guards (dispatch and after a retryable result)
+M04 KILLED   orchestrator.py: call window check removed at dispatch
+M05 KILLED   orchestrator.py: concurrency limit removed
+M06 KILLED   orchestrator.py: nearest appointment no longer first
+M07 KILLED   orchestrator.py: call timeout removed
+M08 KILLED   orchestrator.py: duplicate event check removed
+M09 KILLED   orchestrator.py: stale results accepted for any attempt
+M10 KILLED   orchestrator.py: late result path removed
+M11 KILLED   orchestrator.py: deadline not enforced when a result arrives
+M12 KILLED   orchestrator.py: refusal suppression tied to attempt freshness
+M13 KILLED   orchestrator.py: refusal no longer blocks the number (both places)
+M14 KILLED   orchestrator.py: confidence threshold ignored
+M15 KILLED   orchestrator.py: late result ignores the confidence threshold
+M16 KILLED   orchestrator.py: retry ignores the minimum gap
+M17 KILLED   orchestrator.py: urgent priority never set
+M18 KILLED   orchestrator.py: missing-field validation removed
+M19 KILLED   orchestrator.py: confidence range check removed
+M20 KILLED   orchestrator.py: boolean confidence accepted
+M21 KILLED   orchestrator.py: boolean attempt number accepted
+M22 KILLED   orchestrator.py: non-positive attempt number accepted
+M23 KILLED   orchestrator.py: unknown case check removed
+M24 KILLED   orchestrator.py: event ids not namespaced by case
+M25 KILLED   orchestrator.py: duplicate case ids accepted
+M26 KILLED   orchestrator.py: naive current time accepted
+M27 KILLED   orchestrator.py: dialer failure leaves a phantom call
+M28 KILLED   orchestrator.py: provider halt ignored at dispatch
+M29 KILLED   orchestrator.py: late retryable result processed
+M30 KILLED   orchestrator.py: late result leaves the retry scheduled
+M31 KILLED   orchestrator.py: person resolution not idempotent
+M32 KILLED   orchestrator.py: resolution value not validated
+M33 KILLED   orchestrator.py: unknown ticket raises
+M34 KILLED   handoff.py: ticket idempotency key removed
+M35 KILLED   handoff.py: re-trigger never upgrades priority
+M36 KILLED   handoff.py: urgent tickets sorted last
+M37 KILLED   handoff.py: context can override the masked phone (allowlist and merge order, two guards)
+M38 KILLED   handoff.py: tickets not ordered by creation time
+M39 KILLED   model.py: phone not masked in ticket context
+M40 KILLED   model.py: phones reduced to their last ten digits
+M41 KILLED   model.py: terminal state can be reopened
+M42 KILLED   model.py: transition table not enforced
+M43 KILLED   model.py: appointment not normalised to UTC
+M44 KILLED   model.py: call window not validated
+M45 KILLED   schedule.py: retry gap ignored in scheduling
+M46 KILLED   schedule.py: appointment cutoff ignored in scheduling
+M47 KILLED   schedule.py: window end made inclusive
+M48 KILLED   schedule.py: same-day candidate ignores the current time
+M49 KILLED   schedule.py: customer time zone ignored
+M50 KILLED   schedule.py: weekday rule ignored
+M51 KILLED   matcher.py: fuzzy name threshold removed
+M52 KILLED   matcher.py: ambiguous name match auto-resolved
+M53 KILLED   matcher.py: ambiguous phone match auto-resolved
+M54 KILLED   alerts.py: stuck-call alert disabled
+M55 KILLED   alerts.py: overdue-attempt alert disabled
+M56 KILLED   alerts.py: urgent tickets age like normal ones
+M57 KILLED   alerts.py: confidence spike alert disabled
+M58 KILLED   alerts.py: provider halt alert disabled
+M59 KILLED   retell_adapter.py: webhook signature check removed
+M60 KILLED   retell_adapter.py: replay tolerance removed
+M61 KILLED   retell_adapter.py: timestamp left out of the signed data
+M62 KILLED   retell_adapter.py: no-answer mapped to confirmed
+M63 KILLED   retell_adapter.py: do-not-call request mapped to no-answer
+M64 KILLED   retell_adapter.py: spam label retried instead of reviewed
+M65 KILLED   retell_adapter.py: declined call sent to a person instead of retried
+M66 KILLED   retell_adapter.py: provider errors no longer retryable
+M67 KILLED   retell_adapter.py: telephony fact only wins on call_ended
+M68 KILLED   retell_adapter.py: analysis confidence range not checked
+M69 KILLED   retell_adapter.py: metadata validation removed
+M70 KILLED   retell_adapter.py: boolean attempt number accepted
+M71 KILLED   retell_adapter.py: non-positive attempt number accepted
+M72 KILLED   retell_adapter.py: metadata type not checked
+M73 KILLED   retell_adapter.py: nested values not type-guarded
+M74 KILLED   retell_adapter.py: spoken call closed before analysis
+M75 KILLED   retell_adapter.py: missing analysis trusted as confirmed
+M76 KILLED   retell_adapter.py: account-level stop ignored
+M77 KILLED   retell_adapter.py: call bindings not enforced
+restored baseline passes: True
+77 of 77 mutations killed

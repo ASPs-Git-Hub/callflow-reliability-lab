@@ -1,0 +1,20 @@
+{
+  "_comment": "Specification only. NOT deployed to any Retell account and NOT verified against a live agent. Field names for the agent and post-call analysis must be checked against Retell's current API before use.",
+  "purpose": "Confirm a plumbing service appointment by phone for the fictional company 'Nimbus Plumbing'.",
+  "per_call_inputs": {
+    "metadata": {"case_id": "string, our case id", "attempt_no": "integer, our attempt number"},
+    "dynamic_variables": ["customer_first_name", "appointment_date_local", "appointment_time_local"]
+  },
+  "prompt_rules": [
+    "Identify the company and purpose in the first sentence. Never read out payment or card details.",
+    "If the person is not the customer, say you will call back and end the call: outcome wrong_number or no_answer, never confirmed.",
+    "Only report confirmed or declined when the customer says so clearly; otherwise report unclear with a low confidence.",
+    "If asked to change the time, do not promise anything: report reschedule.",
+    "If the person asks not to be called again, say it will be noted and report refused."
+  ],
+  "post_call_analysis_schema": {
+    "outcome": "enum: confirmed, declined, reschedule, no_answer, voicemail, wrong_number, refused, dropped, unclear",
+    "confidence": "number between 0 and 1: how clearly the customer stated it"
+  },
+  "webhook": "POST to the receiver; verify X-Retell-Signature on the raw body; handle call_ended and call_analyzed only"
+}

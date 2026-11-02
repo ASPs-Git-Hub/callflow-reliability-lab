@@ -1,0 +1,36 @@
+Simulation: 5 seeds x 150 cases x 6 days, time step 15 minutes, window spans a US daylight-saving change.
+
+== naive (750 cases) ==
+  confirmed by the system: 437  declined by the system: 25  sent to a person: 116  still open at the end: 172  calls per case: 8.24
+  invariant violations (0 is the goal):
+    calls_outside_local_window               5224
+    calls_to_do_not_call                     140
+    calls_after_refusal                      0
+    over_max_attempts                        444
+    attempts_closer_than_min_gap             5427
+    calls_after_cutoff                       7
+    duplicate_tickets                        6
+    events_applied_twice                     312
+    stale_results_applied                    0
+    low_confidence_accepted                  73
+    called_again_after_a_clear_answer        0
+    cases_never_dispatched_or_escalated      0
+    cases_waiting_past_appointment           172
+
+== fixed (750 cases) ==
+  confirmed by the system: 402  declined by the system: 18  sent to a person: 330  still open at the end: 0  calls per case: 1.99
+  invariant violations (0 is the goal):
+    calls_outside_local_window               0
+    calls_to_do_not_call                     0
+    calls_after_refusal                      0
+    over_max_attempts                        0
+    attempts_closer_than_min_gap             0
+    calls_after_cutoff                       0
+    duplicate_tickets                        0
+    events_applied_twice                     0
+    stale_results_applied                    0
+    low_confidence_accepted                  0
+    called_again_after_a_clear_answer        0
+    cases_never_dispatched_or_escalated      0
+    cases_waiting_past_appointment           0
+
