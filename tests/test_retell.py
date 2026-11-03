@@ -182,6 +182,25 @@ class Integration(unittest.TestCase):
             self.assertEqual((r["status"], o.halted), ("halted", reason))
             self.assertEqual(o.tickets.tickets, {})
 
+    def test_abuse_flag_from_the_provider_halts_dispatch_for_every_case(self):
+        """Found by the real-data check (real-data/PROTOCOL.md, Part 3): Retell documents `scam_detected` as an error stop
+        ("the agent was flagged for suspected abuse"). Dialing on for other cases while the sender is flagged is the wrong
+        default, so it must stop the campaign like the other account-level stops, on either event."""
+        for event in ("call_ended", "call_analyzed"):
+            o = Orchestrator(dialer=self.calls.append)
+            a = Case("A1", "+15550001111", "America/New_York", T0 + timedelta(days=3))
+            b = Case("B1", "+15550002222", "America/New_York", T0 + timedelta(days=3))
+            o.add_case(a, T0)
+            o.tick(T0)
+            o.add_case(b, T0)
+            body = json.dumps(payload(event, "scam_detected"))
+            r = handle_webhook(body, sign(body), KEY, o, T0, NOW_MS)
+            self.assertEqual((r["status"], o.halted), ("halted", "scam_detected"), event)
+            self.assertEqual(o.tickets.tickets, {})
+            n = len(o.calls)
+            o.tick(T0 + timedelta(hours=1))
+            self.assertEqual(len(o.calls), n, "no call may be placed for case B1 while halted")
+
     def test_bindings_reject_metadata_that_was_not_issued_by_us(self):
         body = json.dumps(payload(analysis={"outcome": "confirmed", "confidence": 0.95}))
         bad = handle_webhook(body, sign(body), KEY, self.o, T0, NOW_MS, bindings={"call_1": ("OTHER", 1)})

@@ -1,0 +1,2 @@
+area codes: 442 {'US': 358, 'CA': 56, 'other-NANP': 22, 'US-territory': 6}
+zones from dataset: 42 supplement: 7

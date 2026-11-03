@@ -1,0 +1,105 @@
+== 1. SDK test vector ==
+PASS  independent HMAC-SHA256(body + timestamp, key) reproduces the SDK test digest
+PASS  lab verify_signature accepts the SDK test vector
+
+== 2. malformed signatures listed in the SDK tests (expected: rejected by every SDK) ==
+PASS  lab rejects: empty
+PASS  lab rejects: no digest
+PASS  lab rejects: fields swapped
+PASS  lab rejects: prefix
+PASS  lab rejects: suffix
+PASS  lab rejects: non-hex digest
+PASS  lab rejects: digest too short
+PASS  lab rejects: huge timestamp (TS test)
+PASS  lab rejects: negative timestamp (PY test)
+PASS  lab rejects: extra field (PY test)
+
+== 3. five-minute tolerance (SDK tests: inclusive at 300000 ms, both directions) ==
+PASS  now = signature time +300000 ms -> accept
+PASS  now = signature time +300001 ms -> reject
+PASS  now = signature time -300000 ms -> accept
+PASS  now = signature time -300001 ms -> reject
+PASS  tampered body rejected
+PASS  wrong key rejected
+
+== 4. differential cases (lab vs my transcription of each SDK) ==
+valid                                                          lab=True  py_sdk=True  ts_sdk=True 
+upper-case digest                                              lab=True  py_sdk=False ts_sdk=True    <-- differs
+leading zero in timestamp, digest over the normalised number   lab=False py_sdk=True  ts_sdk=True    <-- differs
+leading zero in timestamp, digest over the raw string          lab=True  py_sdk=False ts_sdk=False   <-- differs
+leading space in header                                        lab=True  py_sdk=False ts_sdk=False   <-- differs
+trailing space in header                                       lab=True  py_sdk=False ts_sdk=False   <-- differs
+trailing newline in header                                     lab=True  py_sdk=False ts_sdk=False   <-- differs
+digest 63 hex chars                                            lab=False py_sdk=False ts_sdk=False
+digest 65 hex chars                                            lab=False py_sdk=False ts_sdk=False
+non-ASCII body, correct signature                              lab=True  py_sdk=True  ts_sdk=True 
+empty body, correct signature                                  lab=True  py_sdk=True  ts_sdk=True 
+body re-serialised (space added after colon)                   lab=False py_sdk=False ts_sdk=False
+FAIL  no case where the lab accepts a header that BOTH SDKs reject, other than whitespace around an otherwise valid header (listed below)
+differences listed: [('upper-case digest', 'lab=True', 'py=False', 'ts=True'), ('leading zero in timestamp, digest over the normalised number', 'lab=False', 'py=True', 'ts=True'), ('leading zero in timestamp, digest over the raw string', 'lab=True', 'py=False', 'ts=False'), ('leading space in header', 'lab=True', 'py=False', 'ts=False'), ('trailing space in header', 'lab=True', 'py=False', 'ts=False'), ('trailing newline in header', 'lab=True', 'py=False', 'ts=False')]
+
+== 5. documented sample payloads through handle_webhook ==
+sample call_ended exactly as published (metadata {}): {'status': 'rejected', 'reason': 'call metadata must carry case_id and attempt_no'}
+PASS  published sample without lab metadata is rejected, not applied
+sample call_ended + lab metadata (user_hangup): {'status': 'ignored'}
+PASS  spoken call, call_ended alone is ignored (waits for call_analyzed)
+sample call_analyzed (docs custom_analysis_data has no outcome field) + lab metadata: {'status': 'applied'} | case state: needs_person
+PASS  analysis without the lab's outcome field goes to a person, never to confirmed
+same signed call_analyzed delivered 3 times (documented retries): ['applied', 'duplicate', 'duplicate'] | state: confirmed
+PASS  three deliveries apply the result once
+not-connected call: call_ended then call_analyzed (docs: both are sent): applied duplicate | state: waiting
+PASS  not-connected call is completed by call_ended; the later call_analyzed is a duplicate
+PASS  wrong-key signature rejected at the webhook level
+PASS  signature older than 5 minutes rejected at the webhook level
+
+== 6. documented DisconnectionReason enum vs the adapter ==
+enum values read from the reference: 39
+FAIL  enum has 40 values (as read on 2026-11-03)
+PASS  every key in the adapter's FINAL mapping is a documented value (typo check)
+PASS  every account-level stop reason is a documented value
+disconnection_reason                     on call_ended          on call_analyzed with no analysis
+user_hangup                              wait for analysis      unclear
+agent_hangup                             wait for analysis      unclear
+user_requested_dnc                       refused                refused
+user_requested_callback                  reschedule             reschedule
+call_transfer                            wait for analysis      unclear
+voicemail_reached                        voicemail              voicemail
+ivr_reached                              no_answer              no_answer
+inactivity                               wait for analysis      unclear
+max_duration_reached                     wait for analysis      unclear
+concurrency_limit_reached                dropped                dropped
+no_concurrency_fallback                  wait for analysis      unclear
+no_valid_payment                         halt dispatch          unclear
+credit_exhausted                         halt dispatch          unclear
+budget_reached                           halt dispatch          unclear
+scam_detected                            wait for analysis      unclear
+dial_busy                                no_answer              no_answer
+dial_failed                              dropped                dropped
+dial_no_answer                           no_answer              no_answer
+invalid_destination                      wrong_number           wrong_number
+telephony_provider_permission_denied     unclear                unclear
+telephony_provider_unavailable           dropped                dropped
+sip_routing_error                        unclear                unclear
+marked_as_spam                           unclear                unclear
+network_blocked                          unclear                unclear
+user_declined                            no_answer              no_answer
+error_llm_websocket_open                 dropped                dropped
+error_llm_websocket_lost_connection      dropped                dropped
+error_llm_websocket_runtime              dropped                dropped
+error_llm_websocket_corrupt_payload      dropped                dropped
+error_no_audio_received                  dropped                dropped
+error_asr                                dropped                dropped
+error_retell                             dropped                dropped
+error_unknown                            dropped                dropped
+error_user_not_joined                    dropped                dropped
+registered_call_timeout                  dropped                dropped
+transfer_bridged                         wait for analysis      unclear
+transfer_cancelled                       wait for analysis      unclear
+manual_stopped                           wait for analysis      unclear
+call_take_over                           wait for analysis      unclear
+
+reasons that fall to the analysis path (spoken-call or not otherwise decided): ['user_hangup', 'agent_hangup', 'call_transfer', 'inactivity', 'max_duration_reached', 'no_concurrency_fallback', 'scam_detected', 'transfer_bridged', 'transfer_cancelled', 'manual_stopped', 'call_take_over']
+
+FAILED CHECKS: 2
+  - no case where the lab accepts a header that BOTH SDKs reject, other than whitespace around an otherwise valid header (listed below)
+  - enum has 40 values (as read on 2026-11-03)

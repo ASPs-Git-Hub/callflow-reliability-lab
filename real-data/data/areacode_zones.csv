@@ -1,0 +1,443 @@
+area_code,label,geocoding_name,zones
+201,US,New Jersey,America/New_York
+202,US,Washington D.C.,America/New_York
+203,US,,America/New_York
+204,CA,Manitoba,America/Winnipeg
+205,US,Alabama,America/Chicago
+206,US,Washington State,America/Los_Angeles
+207,US,Maine,America/New_York
+208,US,Idaho,America/Boise&America/Denver&America/Los_Angeles
+209,US,California,America/Los_Angeles
+210,US,"San Antonio, TX",America/Chicago
+212,US,"New York, NY",America/New_York
+213,US,"Los Angeles, CA",America/Los_Angeles
+214,US,Texas,America/Chicago
+215,US,Pennsylvania,America/New_York
+216,US,Ohio,America/New_York
+217,US,Illinois,America/Chicago
+218,US,Minnesota,America/Chicago
+219,US,Indiana,America/Chicago&America/New_York
+220,US,Ohio,America/New_York
+223,US,Pennsylvania,America/New_York
+224,US,Illinois,America/Chicago
+225,US,Louisiana,America/Chicago
+226,CA,Ontario,America/Toronto
+227,US,Maryland,America/New_York
+228,US,Mississippi,America/Chicago
+229,US,Georgia,America/New_York
+231,US,Michigan,America/New_York
+234,US,Ohio,America/New_York
+235,US,Missouri,America/Chicago
+236,CA,British Columbia,America/Vancouver
+239,US,Florida,America/New_York
+240,US,Maryland,America/New_York
+242,other-NANP,,America/Nassau
+246,other-NANP,,America/Barbados
+248,US,Michigan,America/New_York
+249,CA,Ontario,America/Toronto
+250,CA,British Columbia,America/Edmonton&America/Vancouver
+251,US,Alabama,America/Chicago
+252,US,North Carolina,America/New_York
+253,US,Washington State,America/Los_Angeles
+254,US,Texas,America/Chicago
+256,US,Alabama,America/Chicago
+257,CA,British Colombia,America/Vancouver
+260,US,Indiana,America/New_York
+262,US,Wisconsin,America/Chicago
+263,CA,"Montreal, QC",America/Toronto
+264,other-NANP,,America/Anguilla
+267,US,Pennsylvania,America/New_York
+268,other-NANP,,America/Antigua
+269,US,Michigan,America/New_York
+270,US,Kentucky,America/Chicago&America/New_York
+272,US,Pennsylvania,America/New_York
+273,CA,Quebec,America/Toronto
+274,US,Wisconsin,America/Chicago
+276,US,Virginia,America/New_York
+279,US,California,America/Los_Angeles
+281,US,Texas,America/Chicago
+283,US,Ohio,America/New_York
+284,other-NANP,,America/Tortola
+289,CA,Ontario,America/Toronto
+301,US,Maryland,America/New_York
+302,US,Delaware,America/New_York
+303,US,Colorado,America/Denver
+304,US,West Virginia,America/New_York
+305,US,Florida,America/New_York
+306,CA,Saskatchewan,America/Regina
+307,US,Wyoming,America/Denver
+308,US,Nebraska,America/Chicago&America/Denver
+309,US,Illinois,America/Chicago
+310,other-NANP,,America/Los_Angeles
+312,US,"Chicago, IL",America/Chicago
+313,US,Michigan,America/New_York
+314,US,Missouri,America/Chicago
+315,US,New York,America/New_York
+316,US,Kansas,America/Chicago
+317,US,Indiana,America/New_York
+318,US,Louisiana,America/Chicago
+319,US,Iowa,America/Chicago
+320,US,Minnesota,America/Chicago
+321,US,Florida,America/New_York
+323,US,California,America/Los_Angeles
+324,US,Florida,America/New_York
+325,US,Texas,America/Chicago
+326,US,Ohio,America/New_York
+327,US,Arkansas,America/Chicago
+329,US,New York,America/New_York
+330,US,Ohio,America/New_York
+331,US,Illinois,America/Chicago
+332,US,"New York, NY",America/New_York
+334,US,Alabama,America/Chicago
+336,US,North Carolina,America/New_York
+337,US,Louisiana,America/Chicago
+339,US,Massachusetts,America/New_York
+340,US-territory,,America/St_Thomas
+341,US,California,America/Los_Angeles
+343,CA,Ontario,America/Toronto
+345,other-NANP,,America/Cayman
+346,US,Texas,America/Chicago
+347,US,New York,America/New_York
+350,US,California,America/Los_Angeles
+351,US,Massachusetts,America/New_York
+352,US,Florida,America/New_York
+353,US,Wisconsin,America/Chicago
+354,CA,Quebec,America/Toronto
+360,US,Washington State,America/Los_Angeles
+361,US,Texas,America/Chicago
+363,US,New York,America/New_York
+364,US,Kentucky,America/New_York
+365,CA,Ontario,America/Toronto
+367,CA,Quebec,America/Toronto
+368,CA,Alberta,America/Edmonton
+369,US,California,America/Los_Angeles
+380,US,Ohio,America/New_York
+382,CA,Ontario,America/Toronto
+385,US,Utah,America/Denver
+386,US,Florida,America/New_York
+401,US,Rhode Island,America/New_York
+402,US,Nebraska,America/Chicago
+403,CA,Alberta,America/Edmonton
+404,US,Georgia,America/New_York
+405,US,Oklahoma,America/Chicago
+406,US,Montana,America/Denver
+407,US,Florida,America/New_York
+408,US,California,America/Los_Angeles
+409,US,Texas,America/Chicago
+410,US,Maryland,America/New_York
+412,US,Pennsylvania,America/New_York
+413,US,Massachusetts,America/New_York
+414,US,Wisconsin,America/Chicago
+415,US,California,America/Los_Angeles
+416,CA,Ontario,America/Toronto
+417,US,Missouri,America/Chicago
+418,CA,Quebec,America/Halifax&America/Toronto
+419,US,Ohio,America/New_York
+423,US,Tennessee,America/Chicago&America/New_York
+424,US,California,America/Los_Angeles
+425,US,Washington State,America/Los_Angeles
+428,CA,New Brunswick,America/Halifax
+430,US,Texas,America/Chicago
+431,CA,Manitoba,America/Winnipeg
+432,US,Texas,America/Chicago
+434,US,Virginia,America/New_York
+435,US,Utah,America/Denver
+437,CA,"Toronto, ON",America/Toronto
+438,CA,Quebec,America/Toronto
+440,US,Ohio,America/New_York
+441,other-NANP,,Atlantic/Bermuda
+442,US,California,America/Los_Angeles
+443,US,Maryland,America/New_York
+445,US,"Philadelphia, PA",America/New_York
+447,US,Illinois,America/Chicago
+448,US,Florida,America/New_York
+450,CA,Quebec,America/Toronto
+458,US,Oregon,America/Los_Angeles
+463,US,Indiana,America/New_York
+464,US,Illinois,America/Chicago
+468,CA,Quebec,America/Toronto
+469,US,Texas,America/Chicago
+470,US,Georgia,America/New_York
+472,US,North Carolina,America/New_York
+473,other-NANP,,America/Grenada
+474,CA,Saskatchewan,America/Winnipeg
+475,US,Connecticut,America/New_York
+478,US,Georgia,America/New_York
+479,US,Arkansas,America/Chicago
+480,US,Arizona,America/Phoenix
+484,US,Pennsylvania,America/New_York
+501,US,Arkansas,America/Chicago
+502,US,Kentucky,America/New_York
+503,US,Oregon,America/Los_Angeles
+504,US,Louisiana,America/Chicago
+505,US,New Mexico,America/Denver
+506,CA,New Brunswick,America/Halifax
+507,US,Minnesota,America/Chicago
+508,US,Massachusetts,America/New_York
+509,US,Washington State,America/Los_Angeles
+510,US,California,America/Los_Angeles
+512,US,Texas,America/Chicago
+513,US,Ohio,America/New_York
+514,CA,Quebec,America/Toronto
+515,US,Iowa,America/Chicago
+516,US,New York,America/New_York
+517,US,Michigan,America/New_York
+518,US,New York,America/New_York
+519,CA,Ontario,America/Toronto
+520,US,Arizona,America/Phoenix
+530,US,California,America/Los_Angeles
+531,US,Nebraska,America/Chicago
+534,US,Wisconsin,America/Chicago
+539,US,Oklahoma,America/Chicago
+540,US,Virginia,America/New_York
+541,US,Oregon,America/Denver&America/Los_Angeles
+548,CA,Ontario,America/Toronto
+551,US,New Jersey,America/New_York
+557,US,Missouri,America/Chicago
+559,US,California,America/Los_Angeles
+561,US,Florida,America/New_York
+562,US,California,America/Los_Angeles
+563,US,Iowa,America/Chicago
+564,US,Washington State,America/Los_Angeles
+567,US,Ohio,America/New_York
+570,US,Pennsylvania,America/New_York
+571,US,Virginia,America/New_York
+572,US,Oklahoma,America/Chicago
+573,US,Missouri,America/Chicago
+574,US,Indiana,America/Chicago&America/New_York
+575,US,New Mexico,America/Denver
+579,CA,Quebec,America/Toronto
+580,US,Oklahoma,America/Chicago
+581,CA,Quebec,America/Toronto
+582,US,Pennsylvania,America/New_York
+584,CA,Manitoba,America/Winnipeg
+585,US,New York,America/New_York
+586,US,Michigan,America/New_York
+587,CA,Alberta,America/Edmonton
+601,US,Mississippi,America/Chicago
+602,US,Arizona,America/Phoenix
+603,US,New Hampshire,America/New_York
+604,CA,British Columbia,America/Vancouver
+605,US,South Dakota,America/Chicago&America/Denver&America/North_Dakota/Center
+606,US,Kentucky,America/Chicago&America/New_York
+607,US,New York,America/New_York
+608,US,Wisconsin,America/Chicago
+609,US,New Jersey,America/New_York
+610,US,Pennsylvania,America/New_York
+612,US,Minnesota,America/Chicago
+613,CA,Ontario,America/Toronto
+614,US,Ohio,America/New_York
+615,US,Tennessee,America/Chicago
+616,US,Michigan,America/New_York
+617,US,Massachusetts,America/New_York
+618,US,Illinois,America/Chicago
+619,US,California,America/Los_Angeles
+620,US,Kansas,America/Chicago&America/Denver
+623,US,Arizona,America/Phoenix
+626,US,California,America/Los_Angeles
+628,US,California,America/Los_Angeles
+629,US,Tennessee,America/Chicago
+630,US,Illinois,America/Chicago
+631,US,New York,America/New_York
+636,US,Missouri,America/Chicago
+639,CA,Saskatchewan,America/Regina
+640,US,New Jersey,America/New_York
+641,US,Iowa,America/Chicago
+645,US,Florida,America/New_York
+646,US,New York,America/New_York
+647,CA,Ontario,America/Toronto
+649,other-NANP,,America/Grand_Turk
+650,US,California,America/Los_Angeles
+651,US,Minnesota,America/Chicago
+656,US,Florida,America/New_York
+657,US,California,America/Los_Angeles
+658,other-NANP,,America/Jamaica
+659,US,Alabama,America/Chicago
+660,US,Missouri,America/Chicago
+661,US,California,America/Los_Angeles
+662,US,Mississippi,America/Chicago
+664,other-NANP,,America/Montserrat
+667,US,Maryland,America/New_York
+669,US,California,America/Los_Angeles
+670,US-territory,,Pacific/Saipan
+671,US-territory,,Pacific/Guam
+672,CA,British Columbia,America/Vancouver
+678,US,Georgia,America/New_York
+680,US,New York,America/New_York
+681,US,West Virginia,America/New_York
+682,US,Texas,America/Chicago
+683,CA,Ontario,America/Toronto
+684,US-territory,,Pacific/Pago_Pago
+686,US,Virginia,America/New_York
+689,US,Florida,America/Chicago
+701,US,North Dakota,America/Chicago&America/Denver&America/North_Dakota/Center
+702,US,Nevada,America/Los_Angeles
+703,US,Virginia,America/New_York
+704,US,North Carolina,America/New_York
+705,CA,Ontario,America/Toronto
+706,US,Georgia,America/New_York
+707,US,California,America/Los_Angeles
+708,US,Illinois,America/Chicago
+709,CA,Newfoundland and Labrador,America/Halifax&America/St_Johns
+712,US,Iowa,America/Chicago
+713,US,,America/Chicago
+714,US,California,America/Los_Angeles
+715,US,Wisconsin,America/Chicago
+716,US,New York,America/New_York
+717,US,Pennsylvania,America/New_York
+718,US,,America/New_York
+719,US,Colorado,America/Denver
+720,US,Colorado,America/Denver
+721,other-NANP,,America/Lower_Princes
+724,US,Pennsylvania,America/New_York
+725,US,Nevada,America/Los_Angeles
+726,US,"San Antonio, TX",America/Chicago
+727,US,Florida,America/New_York
+728,US,"Palm Beach, FL",America/New_York
+730,US,Illinois,America/Chicago
+731,US,Tennessee,America/Chicago
+732,US,New Jersey,America/New_York
+734,US,Michigan,America/New_York
+737,US,Texas,America/Chicago
+738,US,California,America/Los_Angeles
+740,US,Ohio,America/New_York
+742,CA,Ontario,America/Toronto
+743,US,North Carolina,America/New_York
+747,US,California,America/Los_Angeles
+748,US,Colorado,America/Denver
+753,CA,Ontario,America/Toronto
+754,US,Florida,America/New_York
+757,US,Virginia,America/New_York
+758,other-NANP,,America/St_Lucia
+760,US,California,America/Los_Angeles
+762,US,Georgia,America/New_York
+763,US,Minnesota,America/Chicago
+765,US,Indiana,America/New_York
+767,other-NANP,,America/Dominica
+769,US,Mississippi,America/Chicago
+770,US,Georgia,America/New_York
+771,US,Washington D.C.,America/New_York
+772,US,Florida,America/New_York
+773,US,"Chicago, IL",America/Chicago
+774,US,Massachusetts,America/New_York
+775,US,Nevada,America/Boise&America/Denver&America/Los_Angeles
+778,CA,British Columbia,America/Vancouver
+779,US,Illinois,America/Chicago
+780,CA,Alberta,America/Edmonton
+781,US,Massachusetts,America/New_York
+782,CA,Nova Scotia/Prince Edward Island,America/Halifax
+784,other-NANP,,America/St_Vincent
+785,US,Kansas,America/Chicago&America/Denver
+786,US,Florida,America/New_York
+787,US-territory,,America/Puerto_Rico
+801,US,Utah,America/Denver
+802,US,Vermont,America/New_York
+803,US,South Carolina,America/New_York
+804,US,Virginia,America/New_York
+805,US,California,America/Los_Angeles
+806,US,Texas,America/Chicago
+807,CA,Ontario,America/Toronto&America/Winnipeg
+808,US,Hawaii,Pacific/Honolulu
+809,other-NANP,,America/Santo_Domingo
+810,US,Michigan,America/New_York
+812,US,Indiana,America/Chicago&America/New_York
+813,US,Florida,America/New_York
+814,US,Pennsylvania,America/New_York
+815,US,Illinois,America/Chicago
+816,US,Missouri,America/Chicago
+817,US,Texas,America/Chicago
+818,US,California,America/Los_Angeles
+819,CA,Quebec,America/Toronto
+820,US,California,America/Los_Angeles
+821,US,South Carolina,America/New_York
+825,CA,Alberta,America/Edmonton
+826,US,Virginia,America/New_York
+828,US,North Carolina,America/New_York
+829,other-NANP,,America/Santo_Domingo
+830,US,Texas,America/Chicago
+831,US,California,America/Los_Angeles
+832,US,Texas,America/Chicago
+835,US,Pennsylvania,America/New_York
+838,US,New York,America/New_York
+839,US,South Carolina,America/New_York
+840,US,California,America/Los_Angeles
+843,US,South Carolina,America/New_York
+845,US,New York,America/New_York
+847,US,Illinois,America/Chicago
+848,US,New Jersey,America/New_York
+849,other-NANP,,America/Santo_Domingo
+850,US,Florida,America/Chicago&America/New_York
+854,US,South Carolina,America/New_York
+856,US,New Jersey,America/New_York
+857,US,Massachusetts,America/New_York
+858,US,California,America/Los_Angeles
+859,US,Kentucky,America/New_York
+860,US,Connecticut,America/New_York
+862,US,New Jersey,America/New_York
+863,US,Florida,America/New_York
+864,US,South Carolina,America/New_York
+865,US,Tennessee,America/New_York
+867,CA,Northwest Territories/Nunavut/Yukon,America/Edmonton&America/Fort_Nelson&America/Toronto&America/Vancouver&America/Winnipeg
+868,other-NANP,,America/Port_of_Spain
+869,other-NANP,,America/St_Kitts
+870,US,Arkansas,America/Chicago
+872,US,"Chicago, IL",America/Chicago
+873,CA,Quebec,America/Toronto
+876,other-NANP,,America/Jamaica
+878,US,Pennsylvania,America/New_York
+879,CA,Newfoundland and Labrador,America/Puerto_Rico&America/St_Johns
+901,US,Tennessee,America/Chicago
+902,CA,Nova Scotia/Prince Edward Island,America/Halifax
+903,US,Texas,America/Chicago
+904,US,Florida,America/New_York
+905,CA,,America/Toronto
+906,US,Michigan,America/Chicago&America/New_York
+907,US,Alaska,America/Adak&America/Anchorage&America/Juneau&Pacific/Honolulu
+908,US,New Jersey,America/New_York
+909,US,California,America/Los_Angeles
+910,US,North Carolina,America/New_York
+912,US,Georgia,America/New_York
+913,US,Kansas,America/Chicago
+914,US,New York,America/New_York
+915,US,Texas,America/Denver
+916,US,California,America/Los_Angeles
+917,US,New York,America/New_York
+918,US,Oklahoma,America/Chicago
+919,US,North Carolina,America/New_York
+920,US,Wisconsin,America/Chicago
+925,US,California,America/Los_Angeles
+928,US,Arizona,America/Denver&America/Phoenix
+929,US,New York,America/New_York
+930,US,Indiana,America/New_York
+931,US,Tennessee,America/Chicago
+934,US,"New York, NY",America/New_York
+936,US,Texas,America/Chicago
+937,US,Ohio,America/New_York
+938,US,Alabama,America/Chicago
+939,US-territory,,America/Puerto_Rico
+940,US,Texas,America/Chicago
+941,US,Florida,America/New_York
+942,CA,"Toronto, ON",America/Toronto
+943,US,Georgia,America/New_York
+945,US,Texas,America/Chicago
+947,US,Michigan,America/New_York
+948,US,Virginia,America/New_York
+949,US,California,America/Los_Angeles
+951,US,California,America/Los_Angeles
+952,US,Minnesota,America/Chicago
+954,US,Florida,America/New_York
+956,US,Texas,America/Chicago
+959,US,Connecticut,America/New_York
+970,US,Colorado,America/Denver
+971,US,Oregon,America/Los_Angeles
+972,US,Texas,America/Chicago
+973,US,New Jersey,America/New_York
+975,US,Missouri,America/Chicago
+978,US,Massachusetts,America/New_York
+979,US,Texas,America/Chicago
+980,US,North Carolina,America/New_York
+983,US,Colorado,America/Denver
+984,US,North Carolina,America/New_York
+985,US,Louisiana,America/Chicago
+986,US,Idaho,America/Boise&America/Los_Angeles
+989,US,Michigan,America/New_York

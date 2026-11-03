@@ -1,0 +1,3 @@
+cap 4: lab placed 105754 calls | expected sum(min(campaign, cap)) = 85345 | rows where they differ: 4984 | cases sent to a person for attempts_exhausted: 0 | clients above cap: 4984
+cap 3: lab placed 105754 calls | expected sum(min(campaign, cap)) = 77710 | rows where they differ: 7635 | cases sent to a person for attempts_exhausted: 0 | clients above cap: 7635
+cap 6: lab placed 105754 calls | expected sum(min(campaign, cap)) = 93714 | rows where they differ: 2406 | cases sent to a person for attempts_exhausted: 0 | clients above cap: 2406

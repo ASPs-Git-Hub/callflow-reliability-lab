@@ -101,6 +101,7 @@ MUTATIONS = [
     (R, "spoken call closed before analysis", "return None                                       # a spoken call: wait for call_analyzed", 'return {**base, "outcome": "confirmed", "confidence": 1.0}'),
     (R, "missing analysis trusted as confirmed", 'return {**base, "outcome": "unclear", "confidence": 0.0}', 'return {**base, "outcome": "confirmed", "confidence": 1.0}'),
     (R, "account-level stop ignored", "if reason in ACCOUNT_HALT:", "if False:"),
+    (R, "provider abuse flag (scam_detected) no longer halts dispatch", '"no_valid_payment", "scam_detected"})', '"no_valid_payment"})'),
     (R, "call bindings not enforced", 'if bindings is not None and bindings.get(payload["call"]["call_id"]) != (ev["case_id"], ev["attempt_no"]):', "if False:"),
 ]
 

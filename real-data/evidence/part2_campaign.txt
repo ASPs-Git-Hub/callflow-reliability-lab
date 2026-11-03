@@ -1,0 +1,42 @@
+file sha256: 74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8 bytes: 5834924
+rows: 41188 (expected 41188) | campaign min/max: 1 56 | campaign < 1: 0 | y values: ['no', 'yes'] | exact duplicate rows: 12
+lab default max_attempts (read from code): 4
+
+== PRIMARY cap = lab default: cap 4 ==
+clients above cap: 4984 of 41188 (12.10%)
+total calls in data: 105754 | calls above cap: 20409 (19.30% of all calls) | calls the cap would allow: 85345
+subscribed, within cap: 4334 of 36204 = 11.97% (95% Wilson 11.64 to 12.31)
+subscribed, above cap:  306 of 4984 = 6.14% (95% Wilson 5.51 to 6.84)
+all subscriptions: 4640; those from clients above cap: 306 (6.59%)
+all calls of the group divided by its subscriptions: within-cap group 15.1 | above-cap group 131.8
+
+== informational cap: cap 3 ==
+clients above cap: 7635 of 41188 (18.54%)
+total calls in data: 105754 | calls above cap: 28044 (26.52% of all calls) | calls the cap would allow: 77710
+subscribed, within cap: 4085 of 33553 = 12.17% (95% Wilson 11.83 to 12.53)
+subscribed, above cap:  555 of 7635 = 7.27% (95% Wilson 6.71 to 7.87)
+all subscriptions: 4640; those from clients above cap: 555 (11.96%)
+all calls of the group divided by its subscriptions: within-cap group 13.4 | above-cap group 91.8
+
+== informational cap: cap 6 ==
+clients above cap: 2406 of 41188 (5.84%)
+total calls in data: 105754 | calls above cap: 12040 (11.38% of all calls) | calls the cap would allow: 93714
+subscribed, within cap: 4529 of 38782 = 11.68% (95% Wilson 11.36 to 12.00)
+subscribed, above cap:  111 of 2406 = 4.61% (95% Wilson 3.85 to 5.53)
+all subscriptions: 4640; those from clients above cap: 111 (2.39%)
+all calls of the group divided by its subscriptions: within-cap group 17.5 | above-cap group 238.5
+
+bucket (contacts per client): clients, share, subscribed, rate, 95% Wilson, calls
+1      17642  42.83%  2300  13.04% (12.55 to 13.54)  17642
+2      10570  25.66%  1211  11.46% (10.86 to 12.08)  21140
+3       5341  12.97%   574  10.75% (9.94 to 11.61)  16023
+4       2651   6.44%   249   9.39% (8.34 to 10.56)  10604
+5       1599   3.88%   120   7.50% (6.31 to 8.90)   7995
+6        979   2.38%    75   7.66% (6.16 to 9.50)   5874
+7-10    1537   3.73%    84   5.47% (4.44 to 6.72)  12400
+11+      869   2.11%    27   3.11% (2.14 to 4.48)  14076
+
+== replay through the lab ==
+cap 4: lab placed 85345 calls | expected sum(min(campaign, cap)) = 85345 | rows where they differ: 0 | cases sent to a person for attempts_exhausted: 4984 | clients above cap: 4984
+cap 3: lab placed 77710 calls | expected sum(min(campaign, cap)) = 77710 | rows where they differ: 0 | cases sent to a person for attempts_exhausted: 7635 | clients above cap: 7635
+cap 6: lab placed 93714 calls | expected sum(min(campaign, cap)) = 93714 | rows where they differ: 0 | cases sent to a person for attempts_exhausted: 2406 | clients above cap: 2406

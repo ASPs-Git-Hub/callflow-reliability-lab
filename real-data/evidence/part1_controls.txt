@@ -1,0 +1,8 @@
+CONTROL 1: customer time zone ignored in scheduling
+  TOTAL {'minutes': 1641600, 'orc_allowed': 889200, 'lab_unsafe': 0, 'lab_refused': 0, 'sch_unsafe': 720720, 'sch_late_inst': 60480, 'sch_late_min': 27662400, 'sch_none': 0, 'naive_unsafe': 752400, 'utc_unsafe': 375480, 'utc_refused': 375480, 'st_in_unsafe': 0, 'st_in_refused': 0, 'st_nx_unsafe': 680400, 'st_nx_late': 0, 'st_minutes': 777600}
+CONTROL 2: window end made inclusive
+  TOTAL {'minutes': 1641600, 'orc_allowed': 889200, 'lab_unsafe': 68400, 'lab_refused': 0, 'sch_unsafe': 0, 'sch_late_inst': 0, 'sch_late_min': 0, 'sch_none': 0, 'naive_unsafe': 752400, 'utc_unsafe': 378360, 'utc_refused': 309960, 'st_in_unsafe': 32400, 'st_in_refused': 0, 'st_nx_unsafe': 0, 'st_nx_late': 0, 'st_minutes': 777600}
+CONTROL 3: dispatch-time window check removed
+  TOTAL {'minutes': 1641600, 'orc_allowed': 889200, 'lab_unsafe': 752400, 'lab_refused': 0, 'sch_unsafe': 0, 'sch_late_inst': 0, 'sch_late_min': 0, 'sch_none': 0, 'naive_unsafe': 752400, 'utc_unsafe': 375480, 'utc_refused': 375480, 'st_in_unsafe': 0, 'st_in_refused': 0, 'st_nx_unsafe': 0, 'st_nx_late': 0, 'st_minutes': 777600}
+CONTROL 4: window evaluated on the fixed standard-time offset (DST ignored)
+  TOTAL {'minutes': 1641600, 'orc_allowed': 889200, 'lab_unsafe': 16200, 'lab_refused': 16200, 'sch_unsafe': 0, 'sch_late_inst': 0, 'sch_late_min': 0, 'sch_none': 0, 'naive_unsafe': 752400, 'utc_unsafe': 375480, 'utc_refused': 375480, 'st_in_unsafe': 16200, 'st_in_refused': 16200, 'st_nx_unsafe': 0, 'st_nx_late': 0, 'st_minutes': 777600}

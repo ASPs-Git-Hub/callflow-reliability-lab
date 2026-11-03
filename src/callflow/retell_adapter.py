@@ -36,7 +36,9 @@ FINAL = {
     "marked_as_spam": "unclear", "network_blocked": "unclear", "telephony_provider_permission_denied": "unclear",
     "sip_routing_error": "unclear",
 }
-ACCOUNT_HALT = frozenset({"budget_reached", "credit_exhausted", "no_valid_payment"})   # stop the campaign, alert; never a per-case ticket
+# stop the campaign, alert; never a per-case ticket. `scam_detected` is documented as an error stop (the agent was flagged
+# for suspected abuse), added after the real-data check against the public docs showed it fell through to a per-case path.
+ACCOUNT_HALT = frozenset({"budget_reached", "credit_exhausted", "no_valid_payment", "scam_detected"})
 
 
 class AdapterError(Exception):
