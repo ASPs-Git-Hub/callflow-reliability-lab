@@ -2,7 +2,7 @@
 
 **Independent technical demonstration on a fictional plumbing company. The tests use made-up cases on purpose; the main results use real public data (see `real-data/`). Not client work.**
 
-Status: **BUILT_UNVERIFIED**: tests and planted-defect checks were run by me locally on 2026-11-03; remote CI has not yet run on the latest changes. The previous commit passed CI (commit `9f94659`, [run 41516471547](https://github.com/ASPs-Git-Hub/callflow-reliability-lab/actions/runs/41516471547), Python 3.10 and 3.12: unit tests, the mutation check and the simulation report). No outside person has checked the results. The confidentiality gate (`check-confidential.sh`) was run locally by me, not in CI. Every made-up test set was written by me with an AI model, so none is independent human labelling.
+Status: **CI-PASSING**, independent evaluation pending. Last full remote CI run: commit `95c6aa0`, [run 41601096738](https://github.com/ASPs-Git-Hub/callflow-reliability-lab/actions/runs/41601096738), Python 3.10 and 3.12: unit tests, the planted-defect check and the simulation report. I also ran everything locally on 2026-11-03. No outside person has checked the results. The confidentiality gate (`check-confidential.sh`) was run locally by me, not in CI. Every made-up test set was written by me with an AI model, so none is independent human labelling.
 
 ## Real-data results
 Full write-up, rules and raw output: [`real-data/README.md`](real-data/README.md). Three checks on real public data. No real call was made and no Retell account was used.
